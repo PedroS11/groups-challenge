@@ -38,17 +38,15 @@ for (i = 0; i < len; i++) {
   }
 }
 
-
-
+// Get groups
 const groups = []
 
 for(let i = 0; i < len; i++) {
   for(let j = 0; j < len; j++) {
-    if(matrix[i][j]  && visits[i][j] == 0) {
       let group = []
       check_surr(i, j, group)
-      groups.push(group)
-    }
+      if(group.length)
+        groups.push(group)
   }
 }
 
