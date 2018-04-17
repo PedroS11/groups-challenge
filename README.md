@@ -1,0 +1,1 @@
+> node challenge.js 5x8.json
